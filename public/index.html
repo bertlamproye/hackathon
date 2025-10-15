@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Bot Framework Web Chat</title>
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #webchat {
+      height: 600px;
+      width: 1200px;
+      border: 1px solid #ccc;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Verlicht je Loopbaan!</h1>
+  <div id="webchat"></div>
+
+  <script>
+      window.addEventListener('DOMContentLoaded', function () {
+      const directLine = window.WebChat.createDirectLine({
+        secret: '7QVDt4oIYWkn821HlhiKhTKyCq2uekzxu2zm1UzRRrZCnT6mdTTDJQQJ99BJACi5YpzAArohAAABAZBS2RO1.DRmmzFsLhun1hpDGySKBoAnNFN04FVgdJor1cm631y4PdT3C3FRGJQQJ99BJACi5YpzAArohAAABAZBSqAl0'
+      });
+
+      window.WebChat.renderWebChat({
+        directLine: directLine,
+        userID: 'user1',
+        username: 'Bert'
+      }, document.getElementById('webchat'));
+    });
+  </script>
+</body>
+</html>
