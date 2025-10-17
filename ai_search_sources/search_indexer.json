@@ -1,0 +1,49 @@
+{
+  "@odata.context": "https://hackathon-ago-ai-search.search.windows.net/$metadata#indexers/$entity",
+  "@odata.etag": "\"0x8DE0A7FC1040C40\"",
+  "name": "vacature-indexer-embed",
+  "description": null,
+  "dataSourceName": "azureblob-datasource-embed",
+  "skillsetName": null,
+  "targetIndexName": "vacature-index-embedded",
+  "disabled": null,
+  "schedule": null,
+  "parameters": {
+    "batchSize": null,
+    "maxFailedItems": null,
+    "maxFailedItemsPerBatch": null,
+    "configuration": {
+      "parsingMode": "json"
+    }
+  },
+  "fieldMappings": [
+    {
+      "sourceFieldName": "titel",
+      "targetFieldName": "titel",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "niveau",
+      "targetFieldName": "niveau",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "je_persoonlijke_competenties",
+      "targetFieldName": "je_persoonlijke_competenties",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "je_kennis_en_vaardigheden",
+      "targetFieldName": "je_kennis_en_vaardigheden",
+      "mappingFunction": null
+    },
+    {
+      "sourceFieldName": "deelnemingsvoorwaarden",
+      "targetFieldName": "deelnemingsvoorwaarden",
+      "mappingFunction": null
+    }
+  ],
+  "outputFieldMappings": [],
+  "cache": null,
+  "encryptionKey": null
+}

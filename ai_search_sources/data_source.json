@@ -1,0 +1,23 @@
+{
+  "@odata.context": "https://hackathon-ago-ai-search.search.windows.net/$metadata#datasources/$entity",
+  "@odata.etag": "\"0x8DE0A7FBFAC671D\"",
+  "name": "azureblob-datasource-embed",
+  "description": null,
+  "type": "azureblob",
+  "subtype": null,
+  "indexerPermissionOptions": [],
+  "credentials": {
+    "connectionString": "ResourceId=/subscriptions/29eb7ea7-ce9b-4a18-8833-c7c1ac3649c7/resourceGroups/ago-hackathon-ai-01/providers/Microsoft.Storage/storageAccounts/saagohackatonai01;"
+  },
+  "container": {
+    "name": "pfffffff",
+    "query": null
+  },
+  "dataChangeDetectionPolicy": null,
+  "dataDeletionDetectionPolicy": null,
+  "encryptionKey": null,
+  "identity": {
+    "@odata.type": "#Microsoft.Azure.Search.DataUserAssignedIdentity",
+    "userAssignedIdentity": "/subscriptions/29eb7ea7-ce9b-4a18-8833-c7c1ac3649c7/resourcegroups/ago-hackathon-ai-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/uai-ago-hackathon-ai-foundry-user"
+  }
+}
